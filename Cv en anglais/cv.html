@@ -6,58 +6,83 @@
     <title>Page Title</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel='stylesheet' type='text/css' media='screen' href='modele.css'>
-    <script src='main.js'></script>
 </head>
 <body>
-
-<header><h1>Emmanuel <b>TOURNIQUET</b></h1>
-            30 rue de Montdidier, 60120 Breteuil
-            <p>Email:manu60120@gmal.com</p>
-            Date of Birth:01/07/2002
-            <p>Tel:0611791930</p>
-            Driving Licence
+<div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--Here we will define a block that will form the header we will put all personal information-->       
+<header>
+        <h1 class="nom">Emmanuel TOURNIQUET</h1>
+                <p class="policetop">30 rue de Montdidier, 60120 Breteuil</p>
+                <p class="policetop">Email:manu60120@gmail.com</p>
+                <p class="policetop">Date of Birth:01/07/2002</p>
+                <p class="policetop">Tel:0611791930</p>
+                <p class="policetop">Driving Licence</p>
 </header>
-        
-                <h2>ETUDES</h2>
-                        <div>
-                                2021-           <b>BTS Système Numérique 1er année</b>
-                        
-                                Amiens          Lycée La Providence
-                        
-                                2020-2021       <b>Licence Informatique</b>
-                        
-                                Amiens          University of Picardie Jules Verne
+        </div>
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--Here we make several blocks gathered in a larger one that forms the formation part of the cv, the smaller div will serve to align the text in front of the information that corresponds-->
+                <h2>FORMATIONS</h2>
+                        <div class="etudes">
                                 
-                                2019-2020       <b>BACCALAUREATE SCIENCES TECHNOLOGIC MANAGEMENT AND GESTION</b>
-                        
-                                Beauvais        Lycée Félix Faure
-                      
-                                2018-2019       <b>PENULTIMAE YEAR OF SCIENCE BACCALAUREATE</b>
-                        
-                                Beauvais        Lycée Félix Faure
+                                <div class="align">
+                                        <p class="left">2021-</p>
+                                        <p class="center">BTS DIGITAL SYSTEM 1ST YEAR</p>
+                                        <p class="center2">High school La Providence, Amiens</p>
+                                </div>
+
+                                <div class="align">
+                                        <p class="left ">2020-2021</p>
+                                        <p class="center">LICENCE 1ST YEAR</p>
+                                        <p class="center2">University of Picardie Jules Vernes, Amiens</p>
+                                </div>
                                 
-                                2017            <b>NATIONAL DIPLOMA OF BREVET</b>
-                        
-                                Breteuil        <b>With distinction</b>
-                        
-                                                College Compère Morel
-                        </div>        
+                                <div class="align">
+                                        <p class="left ">2019-2020</p>
+                                        <p class="center">BACCALAUREATE SCIENCES TECHNOLOGIC MANAGEMENT AND GESTION</p>
+                                        <p class="center2">High school Félix Faure, Beauvais</p>       
+                                </div>
+
+                                <div class="align">
+                                        <p class="left">2018-2019</p>
+                                        <p class="center">PENULTIMATE YEAR OF SCIENCE BACCALAUREATE</p>
+                                        <p class="center2">High school Félix Faure, Beauvais</p>
+                                </div>
+
+                                <div class="align">
+                                        <p class="left">2017</p>
+                                        <p class="center">NATIONAL DIPLOMA OF BREVET</p>
+                                        <p class="center">With distinction</p>
+                                        <p class="center2">College Compère Morel, Breteuil</p>
+                                </div>          
+                        </div>  
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>  
+<!--Here I made once again 1 large block containing 2 smaller blocks to align the information, and we add information about his own professional experiences-->
                 <h2>PROFESIONNALS EXPERIENCES</h2>
-                        <p><u>Saisonnier</u></p> Couvreur:
-                        De juillet a aout 2019,
-                        <p><b>Travaux réalisés:</b>
-                        Aide a la pose de charpente, couverture, changement de gouttières ...</p>
-                        <p><u>Stage de 3eme</u></p>
-                        Clinique vétérinaire de Breteuil
-
+                        <div>   
+                                <div class="align">
+                                        <p class="left2">02 Jul - 31 Jul 2018</p>
+                                        <p class="center">Restaur'Toitures</p>
+                                        <p class="left2 clear">Crevecoeur le Petit</p>
+                                        <p class="center3">Seasonnal worker</p>
+                                        <p class="center2">Realised task: roof covering, changing gutter, putting velux, zinc working...</p>
+                                </div>
+                                <div class="align">
+                                        <p class="left2">28 Nov - 2 dec 2017</p>
+                                        <p class="center">Veterinary surgery</p>
+                                        <p class="left2 clear">Breteuil</p>
+                                        <p class="center3">Intern</p>
+                                        <p class="center2">Realised task: Discover veterinary job</p>
+                                </div>
+                        </div>  
+<!------------------------------------------------------------------------------------------------------------------------------------------------------------------>    
+<!--I first apply a style to all the text, then put a certain style on the different categories and align them one below the others.-->
                 <h2>PERSONNALS SKILLS</h2>
-                        <p><b>Web: </b>CSS, HTML, SQL, PHP, JS</p>
-                        <p><b>Logiciels maitrisés:</b> PHPmyadmin, visual studio code, Pack Office (Word, PowerPoint…) </p>
-                        <p><b>Langues:</b> Anglais: Niveau B1/B2</p>
-           
-    
-   
-
-
+                        <div >
+                                <p class="normal"><span class="left3">Languages: </span> English: Level B1/B2; Spanish: Level A2</p>
+                                <p class="normal"><span class="left3 clear">Programming languages: </span> CSS, HTML, SQL, PHP, JS, C++</p>
+                                <p class="normal"><span class="left3 clear">Softwares: </span> PHPmyadmin, visual studio code, Pack Office (Word, PowerPoint…) </p>
+                                
+                        </div>
 </body>
 </html>

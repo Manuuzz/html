@@ -1,20 +1,105 @@
-header{
+ /*This part is the top of the page, we will make a big black block that will 
+ only 70% width to be able to place an image on the right of the block. 
+Align the text to the right, adding 10 px below the text*/
+ header{
     background-color: black;
-    padding: 20px;
+    padding: 10px;
     margin: 0;
     color:white;
     text-align: right;
-    border-left: 1px solid white;
+    border-left: 1px solid white;                      
     height:20%;
     width: 70%;
     display:inline-block;
 }
-    h1{
-        font-size: 40px;
-    }
-    h2{
-        background-color: #C0C0C0;
-        color: black;
-        text-align: center;
-        text-decoration: wavy;
-    }
+/*------------------------------------------------------------------------------------------------*/
+/*This part constitutes only the name and surname, it is added a policy, it is put 
+bold text and change the size of the text to 35px for it to 
+differentiates well from the rest*/
+h1.nom{
+    font-size: 35px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+/*------------------------------------------------------------------------------------------------*/
+/*This tag is used to set the titles with a background color, align them in the center, of the 
+bold as well as change the font.*/
+h2{
+    background-color: #C0C0C0;
+    color: black;
+    text-align: center;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+div.etudes{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+/*------------------------------------------------------------------------------------------------*/
+/*We paste the text on the left with a float to be able to add text on the same line.*/
+p.left{
+    float: left;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*This tag is used to reset the float, if we do not put it, the text will just 
+below the float of the top but offset after this one, it is therefore used to put it below 
+but to the line.*/
+p.clear{
+    clear: left;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*A first centered tag that will serve to put the first text of each small block with a center alignment, 
+we put several fonts in the order of preference and if a browser does not have the first font it will put the second and so on.
+We also add bold to the police*/
+p.center{
+    font-weight: bold;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif
+}
+/*------------------------------------------------------------------------------------------------*/
+/*It serves to line up all the small blocks in the center.*/
+div.align{
+    text-align: center;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*I made a second center not to apply the fat of the first center, but it serves the same purpose.*/
+p.center2{
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*I made a 3rd center to once again apply a different style to the text, here we will emphasize it and put it in bold, it always serves the same thing as the other centers.*/
+p.center3{
+    text-align: center;
+    text-decoration: underline;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*I put a second left to apply bold and align it to the left*/
+p.left2{
+    float: left;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+/*------------------------------------------------------------------------------------------------*/
+/*I apply the same style as on the different left, but we underline the text and we put it in bold.*/
+span.left3{
+    float: left;
+    font-weight: bold;
+    text-decoration: underline;
+}
+/*------------------------------------------------------------------------------------------------*/
+/*This tag is just used to return text without effect, just with the same font as the other tags.*/
+p.normal{
+    font-weight: normal;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+p.policetop{
+    font-family: Arial, Helvetica, sans-serif;
+
+}
